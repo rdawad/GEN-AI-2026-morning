@@ -17,9 +17,9 @@ class JavaClass(DotNetClass):
         print("java class inint method", self.javaname)
 
     def inheritance_example(self):
-        return f"accessing dotnet init attributes in java class method {self.name}"
+        print(f"accessing dotnet init attributes in java class method {self.javaname}")
     
-java = JavaClass()
+java = JavaClass("java")
 java.inheritance_example()
 
 
@@ -52,15 +52,7 @@ class PythonBatch2026(DotNetClass):
     
 
 morningbatch = PythonBatch2026("python", "7AM IST", "45DAYS")
-print(morningbatch)
-
-
-
-
-
-
-
-
+morningbatch.batch_duration()
 
 
 
